@@ -8,9 +8,9 @@ export class NewsApiService {
 
   constructor(private http:HttpClient) { }
 
-  topHeadlinesApiUrl = 'https://newsapi.org/v2/top-headlines?country=in&apiKey=dc9cde092b574fc7af802c25dd61ce60';
+  topHeadlinesApiUrl = 'https://newsapi.org/v2/top-headlines?country=in&apiKey=';
 
-  techNewsApiUrl = 'https://newsapi.org/v2/top-headlines?country=in&category=technology&apiKey=dc9cde092b574fc7af802c25dd61ce60';
+  techNewsApiUrl = 'https://newsapi.org/v2/top-headlines?country=in&category=technology&apiKey=';
   topHeadlines():Observable<any>
   {
     return this.http.get(this.topHeadlinesApiUrl);
